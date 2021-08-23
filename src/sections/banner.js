@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Container, Box, Heading, Text, Image, Button, Link } from 'theme-ui';
 import BannerImg from 'assets/banner-thumb.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
@@ -11,13 +11,23 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as='h1' variant='heroPrimary'>
-            Top Quality Digital Products to Explore
+            Reliable Website Development Service
           </Heading>
           <Text as='p' variant='heroSecondary'>
-            Check out our website to find great software products and deals! 
+            Website and more! 
+            
             If you need a website or a web application this is the place to go.
+
+            Check out our website to find great software products and deals! 
           </Text>
-          <Button variant='primary'>Explore</Button>
+          
+          <Link to='feature' variant="default">
+          <Button variant="primary" aria-label="Explore">
+          Explore(need to fix)
+          </Button>
+        </Link>
+
+
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt='banner' />

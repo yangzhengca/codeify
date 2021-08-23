@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Text } from "theme-ui";
 import { Link } from "components/link";
 import data from "./footer.data";
-import FooterLogo from "assets/logo.svg";
+import FooterLogo from "assets/logo.png";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="logo" />
+            <Image src={FooterLogo} alt="logo" sx={styles.footer.image} />
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -25,7 +25,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Company name
+            Copyright by {new Date().getFullYear()} Codeify
           </Text>
         </Box>
       </Container>
@@ -54,11 +54,14 @@ const styles = {
         flexWrap: "wrap",
       },
     },
+    image:{
+      height:'50px',
+    },
 
     link: {
       fontSize: [1, "15px"],
       color: "text",
-      fontWeight: "400",
+      fontWeight: "400",      
       mb: 2,
       cursor: "pointer",
       transition: "all 0.35s",

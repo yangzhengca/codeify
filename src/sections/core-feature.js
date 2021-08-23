@@ -7,11 +7,11 @@ import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
   subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  title: 'Choose best practice technology stack for development',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
-  btnURL: '#',
+    'Implement best practices to ensure that your website is responsive on screens of any size, responds quickly to user operations, and SEO friendly.',
+  btnName: 'Get a quote',
+  btnURL: '/contact',
 };
 
 export default function CoreFeature() {
@@ -28,7 +28,7 @@ export default function CoreFeature() {
         />
       </Box>
       <Box sx={styles.thumbnail}>
-        <Image src={FeatureThumb} alt="Thumbnail" />
+        <Image src={FeatureThumb} alt="Thumbnail" sx={styles.image}/>
         <Box sx={styles.shapeBox}>
           <Image src={shapePattern} alt="Shape"/>
         </Box>
@@ -56,6 +56,9 @@ const styles = {
     '.description': {
       pr: [0, null, 6, 7, 6],
     },
+  },
+  image:{
+    borderRadius: '10px',
   },
   thumbnail: {
     display: 'inline-flex',

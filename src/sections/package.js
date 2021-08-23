@@ -71,7 +71,7 @@ export default function Package() {
     <section id='pricing' sx={{variant:'section.pricing'}}>
       <Container>
         <SectionHeader 
-          slogan='Pricing Plan'
+          slogan='Pricing Information'
           title='Choose your pricing plan'
         />
 
@@ -83,7 +83,7 @@ export default function Package() {
               aria-label='Monthly'
               onClick={()=> handlePricingPlan('monthly') }
             >
-              Monthly Plan
+              Development
             </button>
             <button
               className={state.active === 'annual' ? 'active' : ''}
@@ -91,7 +91,7 @@ export default function Package() {
               aria-label='Annual'
               onClick={()=> handlePricingPlan('annual') }
             >
-              Annual Plan
+              Service
             </button>
           </Box>
         </Flex>

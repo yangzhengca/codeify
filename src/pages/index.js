@@ -18,16 +18,16 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="CODEIFY" description='Website development service' />
           <Banner />
           <KeyFeature />
-          <ServiceSection />
-          <Feature />
+          {/* <ServiceSection /> */}
+          {/* <Feature /> */}
           <CoreFeature />
           <WorkFlow />
           <Package />
-          <TeamSection />
-          <TestimonialCard />
+          {/* <TeamSection /> */}
+          {/* <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );

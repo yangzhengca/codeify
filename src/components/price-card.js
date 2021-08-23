@@ -31,11 +31,12 @@ export default function PriceCard({
           items={points}
           childStyle={styles.listItem}
         />
+        
         <Text className='package__price' sx={styles.price}>
           {priceWithUnit}
-          <span>/monthly</span>
+          {/* <span>/monthly</span> */}
         </Text>
-        <Box sx={styles.buttonGroup}>
+        {/* <Box sx={styles.buttonGroup}>
           <Button variant='primary' aria-label={buttonText}>
             {buttonText}
           </Button>
@@ -49,7 +50,7 @@ export default function PriceCard({
               {anotherOption}
             </Button>
           )}
-        </Box>
+        </Box> */}
       </Box>
     </Card>
   );

@@ -10,11 +10,12 @@ export default function Logo({ src, ...rest }) {
         variant:'links.logo',
         display:'flex',
         cursor:'pointer',
+        height:'47px',
         mr:15
       }}
       {...rest}
     >
-      <Image src={src} alt='nextjs landing page logo' />
+      <Image src={src} alt='Codeify logo' />
     </Link>
   );
 }

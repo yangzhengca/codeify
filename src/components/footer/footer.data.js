@@ -4,20 +4,20 @@ export default {
       path: '/',
       label: 'Home',
     },
+    // {
+    //   path: '/',
+    //   label: 'Adversite',
+    // },
+    // {
+    //   path: '/',
+    //   label: 'Supports',
+    // },
+    // {
+    //   path: '/',
+    //   label: 'Marketing',
+    // },
     {
-      path: '/',
-      label: 'Adversite',
-    },
-    {
-      path: '/',
-      label: 'Supports',
-    },
-    {
-      path: '/',
-      label: 'Marketing',
-    },
-    {
-      path: '/',
+      path: '/contact',
       label: 'Contact',
     },
   ],

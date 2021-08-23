@@ -13,26 +13,26 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: "Fast Performance",
-    title: "Fast Performance",
+    altText: "Fast Development",
+    title: "Fast Development",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "The company landing page website takes less than one month from development to deployment.",
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: "Partnership deal",
-    title: "Partnership deal",
+    altText: "Modular Development",
+    title: "Modular Development",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "We have a variety of functional modules for you to choose. Also priovide customized development according to your needs.",
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: "Pro Subscription",
-    title: "Pro Subscription",
+    altText: "One-stop Service",
+    title: "One-stop Service",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "We provide a full set of solutions, from development, deployment to maintenance.",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const data = [
     altText: "Customer Support",
     title: "Customer Support",
     text:
-      "Get your blood tests delivered at home collect a sample from the your blood tests.",
+      "Your needs are our priority. We provide 7 x 24 customer support for our valued custormers. ",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function KeyFeature() {
     <section id="feature" sx={{ variant: "section.keyFeature" }}>
       <Container>
         <SectionHeader
-          slogan="Whats the function"
+          slogan="Your needs are our priority"
           title="Meet the feature of our product"
         />
         <Grid sx={styles.grid}>
