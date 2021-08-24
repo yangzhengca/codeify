@@ -8,7 +8,7 @@ const packages = {
         name: 'Start',
         description: 'For Small Teams or Office',
         buttonText: 'Start free trail',
-        priceWithUnit: '$2999',
+        priceWithUnit: '$999',
         points: [
           {
             id: 1,
@@ -40,7 +40,7 @@ const packages = {
         id: 2,
         name: 'Business',
         description: 'For Enterprise Business',
-        priceWithUnit: 'Start from $4999',
+        priceWithUnit: 'Start from $2999',
         buttonText: 'Create account',
         anotherOption: 'Or Start 14 Days trail',
         points: [
@@ -76,7 +76,7 @@ const packages = {
         headerIcon: <IoIosCheckmarkCircle />,
         name: 'Business king',
         description: 'For Pro Business Customer',
-        priceWithUnit: 'Start from $5999',
+        priceWithUnit: 'Start from $3999',
         buttonText: 'Create account',
         anotherOption: 'Or Start 14 Days trail',
         points: [
