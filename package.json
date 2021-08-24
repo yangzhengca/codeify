@@ -1,10 +1,10 @@
 {
-  "name": "landing-page",
+  "name": "codeify",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
