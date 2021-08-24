@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button, Link as Linka } from "theme-ui";
+import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
@@ -7,7 +7,7 @@ import LogoDark from "assets/logo.png";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 
-export default function Header({ className }) {
+export default function Header({ className, handleClickOpen  }) {
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
@@ -26,17 +26,15 @@ export default function Header({ className }) {
               {menuItem.label}
             </Link>
           ))}
+            
         </Flex>
 
-        <Linka href="/contact" variant="default">
-          <Button variant="secondary" aria-label="Get a quote">
-            Get a quote
-          </Button>
-        </Linka>
 
-        {/* <Button className='donate__btn' variant='secondary' aria-label='Get a quote'>
+
+
+        <Button className='donate__btn' variant='secondary' aria-label='Get a quote' onClick={handleClickOpen}>
               Get a quote
-          </Button> */}
+          </Button>
 
         <MobileDrawer />
       </Container>

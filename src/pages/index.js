@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 
@@ -13,12 +13,20 @@ import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
+import Contact from 'components/contact'
 
 export default function IndexPage() {
+  const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+
   return (
     <ThemeProvider theme={theme}>
-        <Layout>
-          <SEO title="CODEIFY" description='Website development service' />
+        <Layout handleClickOpen={handleClickOpen}>
+          <SEO title="CODEIFY - Website Solutions" description='Website development service' />
+          <Contact handleClickOpen={handleClickOpen} open={open} setOpen={setOpen} />
           <Banner />
           <KeyFeature />
           {/* <ServiceSection /> */}

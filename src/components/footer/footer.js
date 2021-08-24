@@ -1,31 +1,44 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Image, Text } from "theme-ui";
-import { Link } from "components/link";
+import { Link as Linka } from "components/link";
 import data from "./footer.data";
 import FooterLogo from "assets/logo.png";
+import { Link } from "react-scroll";
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
+          <Linka path="/">
             <Image src={FooterLogo} alt="logo" sx={styles.footer.image} />
-          </Link>
+          </Linka>
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
                 <Link
-                  path={item.path}
+                  // path={item.path}
+                  to={item.path}
                   key={i}
                   label={item.label}
                   sx={styles.footer.link}
-                />
+
+                  // activeClass="active"
+                  // to={menuItem.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  // key={i}
+                >
+                  {item.label}
+                </Link>
               ))}
+
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Codeify
+            Copyright by <strong>Codeify.ca</strong> {new Date().getFullYear()} 
           </Text>
         </Box>
       </Container>

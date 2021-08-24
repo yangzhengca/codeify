@@ -23,7 +23,7 @@ export default function CoreFeature() {
           subTitle={data.subTitle}
           title={data.title}
           description={data.description}
-          btnName={data.btnName}
+          // btnName={data.btnName}
           btnURL={data.btnURL}
         />
       </Box>

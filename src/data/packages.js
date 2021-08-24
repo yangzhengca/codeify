@@ -8,7 +8,7 @@ const packages = {
         name: 'Start',
         description: 'For Small Teams or Office',
         buttonText: 'Start free trail',
-        priceWithUnit: '$3000',
+        priceWithUnit: '$2999',
         points: [
           {
             id: 1,
@@ -40,7 +40,7 @@ const packages = {
         id: 2,
         name: 'Business',
         description: 'For Enterprise Business',
-        priceWithUnit: 'Start from $5000',
+        priceWithUnit: 'Start from $4999',
         buttonText: 'Create account',
         anotherOption: 'Or Start 14 Days trail',
         points: [
@@ -76,7 +76,7 @@ const packages = {
         headerIcon: <IoIosCheckmarkCircle />,
         name: 'Business king',
         description: 'For Pro Business Customer',
-        priceWithUnit: 'Start from $8000',
+        priceWithUnit: 'Start from $5999',
         buttonText: 'Create account',
         anotherOption: 'Or Start 14 Days trail',
         points: [
@@ -113,7 +113,7 @@ const packages = {
         name: 'Start Service',
         description: 'For Small Teams or Office',
         buttonText: 'Start free trail',
-        priceWithUnit: '$500 /time',
+        priceWithUnit: '$499 /time',
         points: [
           {
             id: 1,
@@ -136,7 +136,13 @@ const packages = {
           {
             id: 4,
             icon: <IoIosCheckmarkCircle />,
-            text: '5 x 8 Response',
+            text: 'Maximum 5 hours',
+            isAvailable: true,
+          },
+          {
+            id: 5,
+            icon: <IoIosCheckmarkCircle />,
+            text: '5d x 8h Response',
             isAvailable: true,
           },
         ],
@@ -145,7 +151,7 @@ const packages = {
         id: 2,
         name: 'Business Service',
         description: 'For Enterprise Business',
-        priceWithUnit: '$1000 /month',
+        priceWithUnit: '$999 /month',
         buttonText: 'Create account',
         // anotherOption: 'Or Start 10 Days trail',
         points: [
@@ -164,13 +170,19 @@ const packages = {
           {
             id: 3,
             icon: <IoIosCheckmarkCircle />,
-            text: 'Website Maintenance (Maximum 20 hours)',
+            text: 'Website Maintenance',
             isAvailable: true,
           },
           {
             id: 4,
             icon: <IoIosCheckmarkCircle />,
-            text: '7 x 12 Response',
+            text: 'Maximum 20 hours',
+            isAvailable: true,
+          },
+          {
+            id: 5,
+            icon: <IoIosCheckmarkCircle />,
+            text: '7d x 12h Response',
             isAvailable: true,
           },
         ],
@@ -181,7 +193,7 @@ const packages = {
         headerIcon: <IoIosCheckmarkCircle />,
         name: 'Business King Service',
         description: 'For Pro Business Customer',
-        priceWithUnit: '$2000 /month',
+        priceWithUnit: '$1999 /month',
         buttonText: 'Create account',
         // anotherOption: 'Or Start 10 Days trail',
         points: [
@@ -200,13 +212,19 @@ const packages = {
           {
             id: 3,
             icon: <IoIosCheckmarkCircle />,
-            text: 'Website Maintenance (Maximum 50 hours)',
+            text: 'Website Maintenance',
             isAvailable: true,
           },
           {
             id: 4,
             icon: <IoIosCheckmarkCircle />,
-            text: '7 x 24 Response',
+            text: 'Maximum 50 hours',
+            isAvailable: true,
+          },
+          {
+            id: 5,
+            icon: <IoIosCheckmarkCircle />,
+            text: '7d x 24h Response',
             isAvailable: true,
           },
         ],
