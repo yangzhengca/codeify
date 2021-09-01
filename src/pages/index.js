@@ -14,6 +14,7 @@ import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
 import Contact from 'components/contact'
+import Map from '../sections/map'
 
 export default function IndexPage() {
   const [open, setOpen] = useState(false);
@@ -36,6 +37,7 @@ export default function IndexPage() {
           <Package />
           {/* <TeamSection /> */}
           {/* <TestimonialCard /> */}
+          {/* <Map /> */}
         </Layout>
     </ThemeProvider>
   );
