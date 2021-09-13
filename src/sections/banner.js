@@ -15,7 +15,7 @@ export default function Banner() {
             Reliable Website Solutions
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Website and more! If you need a website for your business, this is
+            Codeify means to transform ideas into codes. We provide websites and more! If you need a website for your business, this is
             the place to go. Check out our website to find great software
             products and deals!
           </Text>
