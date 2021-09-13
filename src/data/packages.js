@@ -5,7 +5,7 @@ const packages = {
     monthly: [
       {
         id: 1,
-        name: 'Start',
+        name: 'Basic',
         description: 'For Small Teams or Office',
         buttonText: 'Start free trail',
         priceWithUnit: '$999',
@@ -38,7 +38,7 @@ const packages = {
       },
       {
         id: 2,
-        name: 'Business',
+        name: 'Standard',
         description: 'For Enterprise Business',
         priceWithUnit: 'Start from $2999',
         buttonText: 'Create account',
@@ -74,7 +74,7 @@ const packages = {
         id: 3,
         header: 'Suggested',
         headerIcon: <IoIosCheckmarkCircle />,
-        name: 'Business king',
+        name: 'Premium',
         description: 'For Pro Business Customer',
         priceWithUnit: 'Start from $3999',
         buttonText: 'Create account',
@@ -110,7 +110,7 @@ const packages = {
     annual: [
       {
         id: 1,
-        name: 'Start Service',
+        name: 'Basic Service',
         description: 'For Small Teams or Office',
         buttonText: 'Start free trail',
         priceWithUnit: '$499 /time',
@@ -149,7 +149,7 @@ const packages = {
       },
       {
         id: 2,
-        name: 'Business Service',
+        name: 'Standard Service',
         description: 'For Enterprise Business',
         priceWithUnit: '$999 /month',
         buttonText: 'Create account',
@@ -191,7 +191,7 @@ const packages = {
         id: 3,
         header: 'Suggested',
         headerIcon: <IoIosCheckmarkCircle />,
-        name: 'Business King Service',
+        name: 'Premium Service',
         description: 'For Pro Business Customer',
         priceWithUnit: '$1999 /month',
         buttonText: 'Create account',
